@@ -16,6 +16,10 @@ export const goodsFromServer = [
   'Garlic',
 ];
 
+const GoodItem = ({ good }) => {
+  return <li data-cy="Good">{good}</li>;
+};
+
 const GoodList = ({ goods }) => {
   return (
     <ul>
@@ -24,10 +28,6 @@ const GoodList = ({ goods }) => {
       })}
     </ul>
   );
-};
-
-const GoodItem = ({ good }) => {
-  return <li data-cy="Good">{good}</li>;
 };
 
 const SORT_FIELD_ALPHABETICALLY = 'alphabet';
